@@ -1,0 +1,178 @@
+/*
+ * TESSTSTTST
+ */
+
+/* 00-notes.css
+ * 
+ * Farbpalette
+ * die Namen sind bereits im
+ * Editor erzeugt worden und
+ * sollen hier al Kommentar
+ * fürs Einsetzen dargstellt
+ * werden:
+ * 
+ * --cm-black
+ * --cm-dark
+ * --cm-light-black
+ * --cm-creme
+ * --cm-grey-text
+ * --cm-border
+ * --cm-wine-red
+ * --cm-wine-red-hover
+ * --cm-wine-red-dark
+ * /
+/*01-globals.css*/
+body,
+.site,
+.site-content {
+  background: var(--cm-dark);
+}
+/* 02-header.css*/
+
+#masthead {
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+
+  background: rgba(9, 8, 7, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(14px);
+
+  border-bottom: 1px solid rgba(244, 240, 233, 0.08);
+}
+/*03-buttons.css*/
+
+.cm-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  border: 1px solid var(--cm-wine-red-dark);
+  color: var(--cm-creme);
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+  width: clamp(220px, 42vw, 280px);
+  max-width: 100%;
+  background: var(--cm-wine-red-dark);
+}
+
+.cm-btn:hover {
+  background: transparent;
+  border-color: var(--cm-wine-red-dark);
+  color: var(--cm-wine-red-hover);
+  transform: translatey(-2px);
+}
+/* 04-hero.css */
+
+.cm-hero {
+  min-height: 80vh;
+  background:
+    linear-gradient(rgba(9, 8, 7, 0.72),
+      rgba(9, 8, 7, 0.86)),
+    url("http://chez-maurice-restaurant.de/wp-content/uploads/2026/05/screenshot-2026-05-15_17-10-38.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+
+  color: var(--cm-creme);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 120px 24px;
+  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.cm-hero-inner {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.cm-hero-title {
+  font-size: clamp(60px, 10vw, 80px);
+}
+
+.cm-hero-subtitle {
+  margin: 0px;
+}
+
+.cm-trennlinie {
+  border-bottom: 1px solid var(--cm-wine-red-dark);
+  padding: 0px 80px;
+  margin-bottom: 3px;
+
+}
+
+.cm-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  column-gap: 25px;
+  row-gap: 12px
+}
+/*05-introsection.css*/
+
+.cm-restaurant {
+  background: var(--cm-dark);
+  color: var(--cm-creme);
+  padding: clamp(90px, 12vw, 160px) clamp(24px, 10vw, 180px);
+  border-top: 1px solid var(--cm-border);
+  box-sizing: border-box;
+}
+
+.cm-restaurant-inner {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.cm-kicker {
+  margin: 0 0 28px;
+  color: var(--cm-wine-red-dark);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.cm-section-title {
+  margin: 0 0 34px;
+  color: var(--cm-creme);
+  font-size: clamp(30px, 4vw, 65px);
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.cm-section-text {
+  max-width: 980px;
+  margin: 0 auto;
+  color: var(--cm-grey-text);
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.9;
+  font-weight: 400;
+}

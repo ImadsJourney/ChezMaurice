@@ -1,0 +1,44 @@
+/*05-introsection.css*/
+
+.cm-restaurant {
+  background: var(--cm-dark);
+  color: var(--cm-creme);
+  padding: clamp(90px, 12vw, 160px) clamp(24px, 10vw, 180px);
+  border-top: 1px solid var(--cm-border);
+  box-sizing: border-box;
+}
+
+.cm-restaurant-inner {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.cm-kicker {
+  margin: 0 0 28px;
+  color: var(--cm-wine-red-dark);
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
+.cm-section-title {
+  margin: 0 0 34px;
+  color: var(--cm-creme);
+  font-size: clamp(30px, 4vw, 65px);
+  font-weight: 300;
+  letter-spacing: 0.16em;
+  line-height: 1.05;
+  text-transform: uppercase;
+}
+
+.cm-section-text {
+  max-width: 980px;
+  margin: 0 auto;
+  color: var(--cm-grey-text);
+  font-size: clamp(16px, 1.3vw, 20px);
+  line-height: 1.9;
+  font-weight: 400;
+}

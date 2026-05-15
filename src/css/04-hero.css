@@ -1,0 +1,62 @@
+/* 04-hero.css */
+
+.cm-hero {
+  min-height: 80vh;
+  background:
+    linear-gradient(rgba(9, 8, 7, 0.72),
+      rgba(9, 8, 7, 0.86)),
+    url("http://chez-maurice-restaurant.de/wp-content/uploads/2026/05/screenshot-2026-05-15_17-10-38.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-shadow: 0 2px 18px rgba(0, 0, 0, 0.55);
+
+  color: var(--cm-creme);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 120px 24px;
+  box-sizing: border-box;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.cm-hero-inner {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+}
+
+.cm-hero-title {
+  font-size: clamp(60px, 10vw, 80px);
+}
+
+.cm-hero-subtitle {
+  margin: 0px;
+}
+
+.cm-trennlinie {
+  border-bottom: 1px solid var(--cm-wine-red-dark);
+  padding: 0px 80px;
+  margin-bottom: 3px;
+
+}
+
+.cm-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  column-gap: 25px;
+  row-gap: 12px
+}
