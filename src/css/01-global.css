@@ -1,0 +1,25 @@
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--cm-dark);
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--cm-dark);
+}
+
+.site-content {
+  flex: 1;
+  background: var(--cm-dark);
+}
+
+.site-footer {
+  background: var(--cm-dark);
+}

@@ -24,10 +24,29 @@
  *
  
 /* FTP deploy test */
-/*01-globals.css*/
-body,
-.site,
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--cm-dark);
+}
+
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--cm-dark);
+}
+
 .site-content {
+  flex: 1;
+  background: var(--cm-dark);
+}
+
+.site-footer {
   background: var(--cm-dark);
 }
 /* 02-header.css*/
@@ -107,8 +126,9 @@ body,
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 30px;
 }
+
 
 .cm-hero-title {
   font-size: clamp(60px, 10vw, 80px);
@@ -119,11 +139,12 @@ body,
 }
 
 .cm-trennlinie {
+  width: 160px;
   border-bottom: 1px solid var(--cm-wine-red-dark);
-  padding: 0px 80px;
-  margin-bottom: 3px;
-
+  margin-inline: auto;
+  margin-bottom: 24px;
 }
+
 
 .cm-hero-actions {
   display: flex;
@@ -178,4 +199,72 @@ body,
   font-size: clamp(16px, 1.3vw, 20px);
   line-height: 1.9;
   font-weight: 400;
+}
+.cm-menu {
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+
+.cm-menu h3 {
+  font-size: clamp(20px, 5vw, 30px);
+  line-height: 1.1;
+  color: var(--cm-wine-red);
+  font-style: italic;
+}
+
+.fdm-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  line-height: 0.7cm;
+  column-gap: 2rem;
+
+  padding: 1rem 0;
+}
+
+.fdm-section-header {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 30px;
+}
+
+.fdm-item .fdm-item-panel .fdm-item-title {
+  font-size: clamp(1rem, 4.7vw, 1.15rem);
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  color: var(--cm-creme);
+}
+
+.fdm-item .fdm-item-panel .fdm-item-price {
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: rgba(127, 45, 58, 0.9);
+}
+/* 07-contact.css*/
+
+.cm-contact-main {
+  margin-top: clamp(70px, 13vw, 100px);
+}
+
+
+.cm-contact-info .cm-kicker {
+  font-size: clamp(10px, 15px, 20px);
+  color: var(--cm-wine-red);
+  margin-bottom: 12px;
+}
+
+.cm-contact-info .cm-section-text {
+  margin-top: 0px;
+  line-height: 0.8cm;
+}
+
+.cm-contact-item {
+  margin-bottom: 60px;
 }

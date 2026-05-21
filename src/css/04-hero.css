@@ -32,8 +32,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 35px;
+  gap: 30px;
 }
+
 
 .cm-hero-title {
   font-size: clamp(60px, 10vw, 80px);
@@ -44,11 +45,12 @@
 }
 
 .cm-trennlinie {
+  width: 160px;
   border-bottom: 1px solid var(--cm-wine-red-dark);
-  padding: 0px 80px;
-  margin-bottom: 3px;
-
+  margin-inline: auto;
+  margin-bottom: 24px;
 }
+
 
 .cm-hero-actions {
   display: flex;

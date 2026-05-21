@@ -1,0 +1,47 @@
+.cm-menu {
+  width: 100%;
+  max-width: 760px;
+  margin-inline: auto;
+}
+
+
+.cm-menu h3 {
+  font-size: clamp(20px, 5vw, 30px);
+  line-height: 1.1;
+  color: var(--cm-wine-red);
+  font-style: italic;
+}
+
+.fdm-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  line-height: 0.7cm;
+  column-gap: 2rem;
+
+  padding: 1rem 0;
+}
+
+.fdm-section-header {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 30px;
+}
+
+.fdm-item .fdm-item-panel .fdm-item-title {
+  font-size: clamp(1rem, 4.7vw, 1.15rem);
+  font-weight: 400;
+  letter-spacing: 0.07em;
+  color: var(--cm-creme);
+}
+
+.fdm-item .fdm-item-panel .fdm-item-price {
+  font-size: 1.1rem;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: rgba(127, 45, 58, 0.9);
+}

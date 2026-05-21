@@ -1,0 +1,21 @@
+/* 07-contact.css*/
+
+.cm-contact-main {
+  margin-top: clamp(70px, 13vw, 100px);
+}
+
+
+.cm-contact-info .cm-kicker {
+  font-size: clamp(10px, 15px, 20px);
+  color: var(--cm-wine-red);
+  margin-bottom: 12px;
+}
+
+.cm-contact-info .cm-section-text {
+  margin-top: 0px;
+  line-height: 0.8cm;
+}
+
+.cm-contact-item {
+  margin-bottom: 60px;
+}
