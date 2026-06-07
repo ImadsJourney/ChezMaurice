@@ -45,3 +45,11 @@
   font-variant-numeric: tabular-nums;
   color: rgba(127, 45, 58, 0.9);
 }
+
+.cm-trenn-menu {
+  margin-top: 20px;
+}
+
+.cm-menu-title {
+  margin-top: 100px;
+}

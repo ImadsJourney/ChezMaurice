@@ -42,3 +42,11 @@
   line-height: 1.9;
   font-weight: 400;
 }
+
+@media(max-width: 767px) {
+  .cm-section-text {
+    text-align: justify;
+    hyphens: auto;
+    text-align-last: center;
+  }
+}

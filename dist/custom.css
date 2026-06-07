@@ -99,7 +99,7 @@ body {
   background:
     linear-gradient(rgba(9, 8, 7, 0.72),
       rgba(9, 8, 7, 0.86)),
-    url("http://chez-maurice-restaurant.de/wp-content/uploads/2026/05/screenshot-2026-05-15_17-10-38.png");
+    url("http://chez-maurice-restaurant.de/wp-content/uploads/2026/06/ChezHero-scaled.jpg");
 
   background-size: cover;
   background-position: center;
@@ -142,7 +142,7 @@ body {
   width: 160px;
   border-bottom: 1px solid var(--cm-wine-red-dark);
   margin-inline: auto;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 
@@ -200,6 +200,14 @@ body {
   line-height: 1.9;
   font-weight: 400;
 }
+
+@media(max-width: 767px) {
+  .cm-section-text {
+    text-align: justify;
+    hyphens: auto;
+    text-align-last: center;
+  }
+}
 .cm-menu {
   width: 100%;
   max-width: 760px;
@@ -247,17 +255,34 @@ body {
   font-variant-numeric: tabular-nums;
   color: rgba(127, 45, 58, 0.9);
 }
+
+.cm-trenn-menu {
+  margin-top: 20px;
+}
+
+.cm-menu-title {
+  margin-top: 100px;
+}
 /* 07-contact.css*/
 
+/*Informationen übers Restaurant*/
 .cm-contact-main {
   margin-top: clamp(70px, 13vw, 100px);
 }
+
 
 
 .cm-contact-info .cm-kicker {
   font-size: clamp(10px, 15px, 20px);
   color: var(--cm-wine-red);
   margin-bottom: 12px;
+  letter-spacing: 0.2em;
+}
+
+@media(max-width: 767px) {
+  .cm-contact-info .cm-kicker {
+    text-align: center;
+  }
 }
 
 .cm-contact-info .cm-section-text {
@@ -267,4 +292,86 @@ body {
 
 .cm-contact-item {
   margin-bottom: 60px;
+}
+
+/* Styling fürs Kontaktformular */
+
+.fluentform .ff-el-input--label label {
+  color: var(--cm-grey-text);
+  font-size: 0.9rem;
+  letter-spacing: 0.04em;
+  font-weight: 500;
+  font-family: Work Sans, sans-serif;
+}
+
+.fluentform .ff-el-form-control {
+  width: 100%;
+  border: 1px solid rgba(243, 234, 215, 0.18);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: #f3ead7;
+  border-radius: 0;
+  padding: 0.85rem 1rem;
+}
+
+.fluentform .ff-el-form-control::placeholder {
+  color: rgba(243, 234, 215, 0.4);
+}
+
+.fluentform .ff-el-form-control:focus {
+  border-color: rgba(127, 45, 58, 0.9);
+  outline: none;
+  box-shadow: 0 0 0 1px rgba(127, 45, 58, 0.35);
+}
+
+.fluentform_success.ff-message-success {
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+
+  background-color: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(127, 45, 58, 0.55);
+
+  color: rgba(243, 234, 215, 0.9);
+  font-size: 0.95rem;
+  line-height: 1.6;
+
+  border-radius: 0;
+}
+
+.ff-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.25em;
+  line-height: 1.6 !important;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  box-sizing: border-box;
+  border: 1px solid var(--cm-wine-red-dark);
+  color: var(--cm-creme);
+
+  width: clamp(220px, 42vw, 280px);
+  min-height: 56px;
+  height: auto;
+  padding: 0.9rem 1.4rem;
+
+  max-width: 100%;
+  background: var(--cm-wine-red-dark);
+
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.25s ease;
+}
+
+.ff-btn:hover {
+  background: transparent;
+  border-color: var(--cm-wine-red-dark);
+  color: var(--cm-wine-red-hover);
+  transform: translatey(-2px);
 }

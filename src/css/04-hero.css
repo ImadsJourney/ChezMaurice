@@ -5,7 +5,7 @@
   background:
     linear-gradient(rgba(9, 8, 7, 0.72),
       rgba(9, 8, 7, 0.86)),
-    url("http://chez-maurice-restaurant.de/wp-content/uploads/2026/05/screenshot-2026-05-15_17-10-38.png");
+    url("http://chez-maurice-restaurant.de/wp-content/uploads/2026/06/ChezHero-scaled.jpg");
 
   background-size: cover;
   background-position: center;
@@ -48,7 +48,7 @@
   width: 160px;
   border-bottom: 1px solid var(--cm-wine-red-dark);
   margin-inline: auto;
-  margin-bottom: 24px;
+  margin-bottom: 30px;
 }
 
 
