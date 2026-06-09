@@ -38,6 +38,8 @@ The project uses the following WordPress plugins:
 
 
 ## Project Structure
+
+```txt
 ChezMaurice
 ├── assets
 │   ├── ChezMaurice.png
@@ -60,7 +62,7 @@ ChezMaurice
         ├── 04-hero.css
         ├── 05-introsection.css
         ├── 06-menu.css
-        └── 07-contact.css
+        └── 07-contact.css ```
 
 
 ## Custom CSS Plugin
