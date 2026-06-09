@@ -42,17 +42,17 @@ The project uses the following WordPress plugins:
 ```txt
 ChezMaurice
 ├── assets
-│   ├── ChezMaurice.png
-│   └── OldChezMaurice.png
+│   ├── ChezMaurice.png
+│   └── OldChezMaurice.png
 ├── config
-│   └── ftp-secrets.fish
+│   └── ftp-secrets.fish
 ├── dist
-│   └── custom.css
+│   └── custom.css
 ├── README.md
 ├── scripts
-│   ├── build-css.fish
-│   ├── deploy-css.fish
-│   └── watch-css.fish
+│   ├── build-css.fish
+│   ├── deploy-css.fish
+│   └── watch-css.fish
 └── src
     └── css
         ├── 00-notes.css
@@ -60,12 +60,13 @@ ChezMaurice
         ├── 02-header.css
         ├── 03-buttons.css
         ├── 04-hero.css
-        ├── 05-introsection.css
+        ├── 05-introduction.css
         ├── 06-menu.css
-        └── 07-contact.css ```
+        └── 07-contact.css
+```
 
 
 ## Custom CSS Plugin
 
 I used my Custom CSS Plugin.
-More infos in [CSSPlugin](https://github.com/ImadsJourney/WP-Neovim-Script)
+More infos in [WP-Neovim-Script](https://github.com/ImadsJourney/WP-Neovim-Script)
